@@ -1,0 +1,311 @@
+/* =========================
+   SECTION
+========================= */
+
+.gallery-preview-section-hp {
+
+  padding: 100px 0;
+
+  background: white;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.gallery-preview-header-hp {
+
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.gallery-tag-hp {
+
+  color: #2d6a4f;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 12px;
+}
+
+.gallery-preview-header-hp h2 {
+
+  font-size: 3rem;
+
+  font-weight: 700;
+
+  color: #1b4332;
+}
+
+/* =========================
+   MASONRY
+========================= */
+
+.gallery-masonry-hp {
+
+  column-count: 3;
+
+  column-gap: 1.2rem;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.gallery-card-hp {
+
+  position: relative;
+
+  margin-bottom: 1.2rem;
+
+  break-inside: avoid;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+
+  cursor: pointer;
+
+  background: #eee;
+}
+
+/* =========================
+   MEDIA
+========================= */
+
+.gallery-media-hp {
+
+  width: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+/* =========================
+   RANDOM HEIGHTS
+========================= */
+
+.gallery-card-hp:nth-child(3n) .gallery-media-hp {
+
+  height: 520px;
+}
+
+.gallery-card-hp:nth-child(2n) .gallery-media-hp {
+
+  height: 360px;
+}
+
+.gallery-card-hp:nth-child(4n) .gallery-media-hp {
+
+  height: 430px;
+}
+
+.gallery-card-hp:nth-child(5n) .gallery-media-hp {
+
+  height: 290px;
+}
+
+/* =========================
+   HOVER
+========================= */
+
+.gallery-card-hp:hover .gallery-media-hp {
+
+  transform: scale(1.06);
+}
+
+/* =========================
+   OVERLAY
+========================= */
+
+.gallery-overlay-hp {
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.08));
+
+  opacity: 0;
+
+  transition: 0.4s ease;
+
+  pointer-events: none;
+}
+
+.gallery-card-hp:hover .gallery-overlay-hp {
+
+  opacity: 1;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.gallery-content-hp {
+
+  position: absolute;
+
+  bottom: 28px;
+  left: 28px;
+
+  transform: translateY(18px);
+
+  transition: 0.4s ease;
+}
+
+.gallery-card-hp:hover .gallery-content-hp {
+
+  transform: translateY(0);
+}
+
+.gallery-content-hp h4 {
+
+  color: white;
+
+  font-size: 1.5rem;
+
+  font-weight: 700;
+
+  margin-bottom: 8px;
+}
+
+.gallery-content-hp span {
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-weight: 500;
+}
+
+/* =========================
+   VIDEO
+========================= */
+
+.gallery-video-wrapper-hp {
+
+  position: relative;
+}
+
+.video-icon-hp {
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 74px;
+  height: 74px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.22);
+
+  backdrop-filter: blur(12px);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  font-size: 1.8rem;
+
+  transition: 0.35s ease;
+
+  pointer-events: none;
+}
+
+.gallery-card-hp:hover .video-icon-hp {
+
+  transform:
+    translate(-50%, -50%) scale(1.12);
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.gallery-controls-hp {
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 45px;
+}
+
+.gallery-btn-hp {
+
+  border: none;
+
+  background: #1b4332;
+
+  color: white;
+
+  padding: 14px 34px;
+
+  border-radius: 999px;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  transition: 0.35s ease;
+}
+
+.gallery-btn-hp:hover {
+
+  transform: translateY(-2px);
+
+  background: #2d6a4f;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+  .gallery-masonry-hp {
+
+    column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .gallery-preview-section-hp {
+
+    padding: 80px 0;
+  }
+
+  .gallery-preview-header-hp h2 {
+
+    font-size: 2.2rem;
+  }
+
+  .gallery-masonry-hp {
+
+    column-count: 1;
+  }
+
+  .gallery-media-hp {
+
+    height: auto !important;
+  }
+}

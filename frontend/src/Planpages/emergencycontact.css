@@ -1,0 +1,150 @@
+.helpline-page {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(to bottom,
+      #f5f7f4,
+      #eef3ef);
+}
+
+/* HEADING */
+
+.helpline-subheading {
+  color: #dc2626;
+
+  font-size: 0.8rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.helpline-title {
+  color: #1b4332;
+
+  font-size: 3rem;
+}
+
+.helpline-text {
+  color: #6c757d;
+
+  font-size: 1.05rem;
+}
+
+/* CARD */
+
+.helpline-card {
+  background: white;
+
+  border-radius: 24px;
+
+  border-top: 4px solid #dc2626;
+
+  border-left: 1px solid rgba(0, 0, 0, 0.04);
+
+  border-right: 1px solid rgba(0, 0, 0, 0.04);
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.35s ease;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  height: 100%;
+}
+
+.helpline-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 18px 35px rgba(220, 38, 38, 0.12);
+}
+
+/* ICON */
+
+.helpline-icon {
+  width: 85px;
+  height: 85px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(135deg,
+      #fff5f5,
+      #fee2e2);
+
+  font-size: 2rem;
+
+  transition: all 0.3s ease;
+}
+
+.helpline-card:hover .helpline-icon {
+  transform: scale(1.08);
+}
+
+/* TEXT */
+
+.helpline-card-title {
+    color: #1b4332;
+
+  margin-bottom: 10px;
+
+  min-height: 52px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.helpline-number {
+  font-size: 1.3rem;
+
+  font-weight: 700;
+
+  color: #dc2626;
+
+  margin-bottom: 22px;
+}
+
+/* BUTTON */
+
+.helpline-btn {
+  background:
+    linear-gradient(135deg,
+      #dc2626,
+      #ef4444);
+
+  color: white;
+
+  border-radius: 50px;
+
+  padding: 10px 22px;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.helpline-btn:hover {
+  color: white;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 20px rgba(220, 38, 38, 0.2);
+}

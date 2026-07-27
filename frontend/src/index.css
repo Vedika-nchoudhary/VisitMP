@@ -1,0 +1,13 @@
+.trip-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12) ;
+}
+
+.reach-card {
+  transition: 0.3s;
+}
+
+.reach-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15) ;
+}

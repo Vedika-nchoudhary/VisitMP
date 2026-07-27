@@ -1,0 +1,41 @@
+.event-grid-section {
+  background-color: #fff;
+}
+
+.category-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 320px;
+  cursor: pointer;
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.08);
+}
+
+.category-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.7)
+  );
+
+  display: flex;
+  align-items: flex-end;
+  padding: 25px;
+}
+
+.category-overlay h3 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+}

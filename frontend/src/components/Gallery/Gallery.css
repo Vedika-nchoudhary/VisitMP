@@ -1,0 +1,360 @@
+/* =========================
+   SECTION
+========================= */
+
+.gallery-section-dp {
+  padding: 5rem 7%;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.gallery-header-dp {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gallery-subtitle-dp {
+  color: #0b6b50;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.gallery-title-dp {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1d1d1d;
+}
+
+/* =========================
+   MASONRY LAYOUT
+========================= */
+
+.gallery-masonry-dp {
+
+  column-count: 3;
+
+  column-gap: 1.2rem;
+}
+
+/* =========================
+   ITEM
+========================= */
+
+.gallery-item-dp {
+
+  position: relative;
+
+  margin-bottom: 1.2rem;
+
+  break-inside: avoid;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  cursor: pointer;
+
+  background: #eee;
+}
+
+/* =========================
+   MEDIA
+========================= */
+
+.gallery-media-dp {
+
+  width: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+/* =========================
+   RANDOM HEIGHT FEEL
+========================= */
+
+.gallery-item-dp:nth-child(3n) .gallery-media-dp {
+  height: 500px;
+}
+
+.gallery-item-dp:nth-child(2n) .gallery-media-dp {
+  height: 350px;
+}
+
+.gallery-item-dp:nth-child(4n) .gallery-media-dp {
+  height: 420px;
+}
+
+.gallery-item-dp:nth-child(5n) .gallery-media-dp {
+  height: 280px;
+}
+
+/* =========================
+   HOVER
+========================= */
+
+.gallery-item-dp:hover .gallery-media-dp {
+
+  transform: scale(1.06);
+}
+
+/* =========================
+   OVERLAY
+========================= */
+
+.gallery-overlay-dp {
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.78),
+      rgba(0, 0, 0, 0.05));
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  padding: 1.5rem;
+
+  opacity: 0;
+
+  transition: 0.4s ease;
+
+  pointer-events: none;
+}
+
+.gallery-item-dp:hover .gallery-overlay-dp {
+
+  opacity: 1;
+}
+
+.gallery-overlay-dp h3 {
+
+  color: white;
+
+  font-size: 1.1rem;
+
+  font-weight: 600;
+
+  margin-bottom: 0.3rem;
+}
+
+.gallery-overlay-dp p {
+
+  color: rgba(255, 255, 255, 0.85);
+
+  text-transform: capitalize;
+
+  margin: 0;
+}
+
+/* =========================
+   VIDEO WRAPPER
+========================= */
+
+.gallery-video-wrapper-dp {
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+/* =========================
+   PLAY BUTTON
+========================= */
+
+.gallery-play-button-dp {
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 72px;
+  height: 72px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.22);
+
+  backdrop-filter: blur(12px);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  font-size: 1.9rem;
+
+  transition: 0.35s ease;
+
+  pointer-events: none;
+}
+
+.gallery-video-wrapper-dp:hover .gallery-play-button-dp {
+
+  transform:
+    translate(-50%, -50%) scale(1.12);
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* =========================
+   VIDEO MODAL
+========================= */
+
+.video-modal-dp {
+
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.92);
+
+  z-index: 9999;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+
+  animation: fadeInDp 0.3s ease;
+}
+
+/* =========================
+   MODAL CONTENT
+========================= */
+
+.video-modal-content-dp {
+
+  position: relative;
+
+  width: 90%;
+
+  max-width: 1100px;
+}
+
+/* =========================
+   FULLSCREEN VIDEO
+========================= */
+
+.fullscreen-video-dp {
+
+  width: 100%;
+
+  max-height: 85vh;
+
+  border-radius: 24px;
+
+  background: black;
+
+  outline: none;
+}
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.video-close-btn-dp {
+
+  position: absolute;
+
+  top: -55px;
+  right: 0;
+
+  width: 46px;
+  height: 46px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  backdrop-filter: blur(10px);
+
+  color: white;
+
+  font-size: 1.4rem;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.video-close-btn-dp:hover {
+
+  transform: scale(1.08);
+
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeInDp {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+  .gallery-masonry-dp {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .gallery-section-dp {
+    padding: 4rem 5%;
+  }
+
+  .gallery-title-dp {
+    font-size: 2.2rem;
+  }
+
+  .gallery-masonry-dp {
+    column-count: 1;
+  }
+
+  .gallery-media-dp {
+    height: auto !important;
+  }
+
+  .video-close-btn-dp {
+
+    top: -48px;
+
+    width: 42px;
+    height: 42px;
+  }
+}

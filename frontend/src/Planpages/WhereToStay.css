@@ -1,0 +1,198 @@
+.wtstay-page {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #f5f7f4,
+      #eef3ef
+    );
+}
+
+/* HEADING */
+
+.wtstay-subheading {
+  color: #52b788;
+
+  font-size: 0.82rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.wtstay-title {
+  color: #1b4332;
+}
+
+.wtstay-text {
+  color: #6c757d;
+}
+
+/* CARD */
+
+.wtstay-card {
+  background: white;
+
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.35s ease;
+
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+.wtstay-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 20px 42px rgba(31, 77, 58, 0.12);
+}
+
+/* IMAGE */
+
+.wtstay-image-wrapper {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.wtstay-image {
+  width: 100%;
+
+  height: 270px;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.wtstay-card:hover .wtstay-image {
+  transform: scale(1.06);
+}
+
+/* BADGE */
+
+.wtstay-badge {
+  position: absolute;
+
+  top: 18px;
+  left: 18px;
+
+  background:
+    rgba(255, 255, 255, 0.92);
+
+  backdrop-filter: blur(8px);
+
+  color: #1f4d3a;
+
+  padding: 9px 16px;
+
+  border-radius: 50px;
+
+  font-size: 0.82rem;
+
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+}
+
+/* CONTENT */
+
+.wtstay-content {
+  padding: 26px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  flex-grow: 1;
+}
+
+/* NAME */
+
+.wtstay-name {
+  color: #1b4332;
+
+  font-size: 1.35rem;
+}
+
+/* PRICE */
+
+.wtstay-price {
+  color: #2d6a4f;
+
+  font-weight: 700;
+
+  font-size: 1rem;
+}
+
+/* LOCATION */
+
+.wtstay-location {
+  color: #6c757d;
+
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 14px;
+}
+
+.wtstay-location svg {
+  color: #52b788;
+}
+
+/* DESCRIPTION */
+
+.wtstay-description {
+  color: #6c757d;
+
+  line-height: 1.7;
+
+  margin-bottom: 24px;
+
+  flex-grow: 1;
+}
+
+/* BUTTON */
+
+.wtstay-btn {
+  background: #1f4d3a;
+
+  color: white;
+
+  border-radius: 14px;
+
+  padding: 11px 20px;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+
+  margin-top: auto;
+}
+
+.wtstay-btn:hover {
+  background: #2d6a4f;
+
+  color: white;
+
+  transform: translateY(-2px);
+}

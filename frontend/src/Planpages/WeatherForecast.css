@@ -1,0 +1,242 @@
+/* =========================
+   WEATHER FORECAST
+========================= */
+
+.weather-forecast-wf {
+  background: #F5F7F4;
+
+  padding: 100px 0;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.forecast-header-wf {
+  margin-bottom: 4rem;
+}
+
+.forecast-subtitle-wf {
+  font-size: 0.72rem;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  color: #7a7a7a;
+
+  margin-bottom: 0.8rem;
+}
+
+.forecast-title-wf {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+
+  font-weight: 700;
+
+  color: #1d4d3b;
+
+  margin: 0;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.forecast-card-wf,
+.details-card-wf {
+  background: rgba(255, 255, 255, 0.7);
+
+  backdrop-filter: blur(18px);
+
+  border-radius: 30px;
+
+  padding: 35px;
+
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.06);
+
+  height: 100%;
+}
+
+/* =========================
+   FORECAST TOP
+========================= */
+
+.forecast-top-wf {
+  margin-bottom: 2rem;
+}
+
+.forecast-top-wf h3,
+.details-card-wf h3 {
+  font-size: 1.5rem;
+
+  font-weight: 600;
+
+  color: #111;
+
+  margin-bottom: 0.5rem;
+}
+
+.forecast-top-wf p {
+  color: #666;
+
+  margin: 0;
+}
+
+/* =========================
+   HOURLY SCROLL
+========================= */
+
+.hourly-scroll-wf {
+  display: flex;
+
+  gap: 18px;
+
+  overflow-x: auto;
+
+  padding-bottom: 10px;
+}
+
+.hourly-scroll-wf::-webkit-scrollbar {
+  height: 6px;
+}
+
+.hourly-scroll-wf::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+
+  border-radius: 20px;
+}
+
+/* =========================
+   HOUR CARD
+========================= */
+
+.hour-card-wf {
+  min-width: 120px;
+
+  padding: 24px 20px;
+
+  border-radius: 24px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.65);
+
+  border: 1px solid rgba(0, 0, 0, 0.04);
+
+  transition: 0.3s ease;
+}
+
+.hour-card-wf:hover {
+  transform: translateY(-6px);
+
+  background: white;
+}
+
+.hour-card-wf span {
+  display: block;
+
+  margin-bottom: 14px;
+
+  color: #777;
+
+  font-size: 0.9rem;
+}
+
+.forecast-icon-wf {
+  font-size: 2rem;
+
+  margin-bottom: 14px;
+}
+
+.hour-card-wf h4 {
+  font-size: 1.4rem;
+
+  font-weight: 600;
+
+  color: #1d1d1d;
+
+  margin: 0;
+}
+
+/* =========================
+   DETAILS GRID
+========================= */
+
+.details-grid-wf {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 18px;
+
+  margin-top: 2rem;
+}
+
+/* =========================
+   DETAIL BOX
+========================= */
+
+.detail-box-wf {
+  padding: 20px;
+
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.65);
+
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.detail-box-wf span {
+  color: #777;
+
+  font-size: 0.88rem;
+}
+
+.detail-box-wf h5 {
+  margin-top: 10px;
+
+  font-size: 1.15rem;
+
+  font-weight: 600;
+
+  color: #1d1d1d;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+  .forecast-card-wf,
+  .details-card-wf {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .forecast-title-wf {
+    font-size: 2rem;
+  }
+
+  .hour-card-wf {
+    min-width: 105px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .details-grid-wf {
+    grid-template-columns: 1fr;
+  }
+
+  .forecast-card-wf,
+  .details-card-wf {
+    padding: 22px;
+  }
+}

@@ -1,0 +1,287 @@
+/* =========================
+   WEEKLY SECTION
+========================= */
+
+.weekly-section-wf {
+  background: #F5F7F4;
+
+  padding: 100px 0;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.weekly-header-wf {
+  margin-bottom: 4rem;
+}
+
+.weekly-subtitle-wf {
+  font-size: 0.72rem;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  color: #7a7a7a;
+
+  margin-bottom: 0.8rem;
+}
+
+.weekly-title-wf {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+
+  font-weight: 700;
+
+  color: #1d4d3b;
+
+  margin: 0;
+}
+
+/* =========================
+   WEEKLY GRID
+========================= */
+
+.weekly-cards-wrapper-wf {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 26px;
+
+  margin-bottom: 6rem;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.weekly-card-wf {
+  background: rgba(255, 255, 255, 0.78);
+
+  backdrop-filter: blur(18px);
+
+  border-radius: 28px;
+
+  padding: 32px 18px;
+
+  text-align: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.08),
+    0 6px 18px rgba(0, 0, 0, 0.05);
+
+  transition: 0.35s ease;
+}
+
+.weekly-card-wf:hover {
+  transform: translateY(-8px);
+
+  background: white;
+}
+
+.weekly-card-wf h5 {
+  color: #666;
+
+  margin-bottom: 1rem;
+
+  font-size: 1rem;
+
+  font-weight: 500;
+}
+
+.weekly-icon-wf {
+  font-size: 2rem;
+
+  margin-bottom: 1rem;
+}
+
+.weekly-card-wf h3 {
+  font-size: 1.8rem;
+
+  font-weight: 700;
+
+  color: #111;
+
+  margin-bottom: 0.4rem;
+}
+
+.weekly-card-wf p {
+  color: #777;
+
+  margin: 0;
+}
+
+/* =========================
+   TRAVEL CARD
+========================= */
+
+.travel-card-wf {
+  overflow: hidden;
+
+  border-radius: 36px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+/* IMAGE */
+
+.travel-image-wf img {
+  width: 100%;
+
+  height: 100%;
+
+  min-height: 520px;
+
+  object-fit: cover;
+}
+
+/* CONTENT */
+
+.travel-content-wf {
+  padding: 50px;
+}
+
+.travel-subtitle-wf {
+  font-size: 0.72rem;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  color: #7a7a7a;
+
+  margin-bottom: 0.8rem;
+}
+
+.travel-content-wf h2 {
+  font-size: 3rem;
+
+  font-weight: 700;
+
+  color: #1d4d3b;
+
+  margin-bottom: 1.5rem;
+}
+
+.travel-description-wf {
+  color: #666;
+
+  line-height: 1.8;
+
+  margin-bottom: 2.5rem;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.travel-grid-wf {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+/* BOX */
+
+.travel-box-wf {
+  padding: 20px;
+
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.travel-box-wf span {
+  color: #777;
+
+  font-size: 0.9rem;
+}
+
+.travel-box-wf h5 {
+  margin-top: 10px;
+
+  font-size: 1.2rem;
+
+  font-weight: 600;
+
+  color: #111;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+
+  .weekly-cards-wrapper-wf {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+
+  .weekly-cards-wrapper-wf {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .travel-content-wf {
+    padding: 35px;
+  }
+
+  .travel-content-wf h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .weekly-cards-wrapper-wf {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .weekly-title-wf {
+    font-size: 2rem;
+  }
+
+  .travel-image-wf img {
+    min-height: 350px;
+  }
+
+  .travel-content-wf h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .weekly-cards-wrapper-wf {
+    grid-template-columns: 1fr;
+  }
+
+  .travel-grid-wf {
+    grid-template-columns: 1fr;
+  }
+
+  .travel-content-wf {
+    padding: 28px;
+  }
+}

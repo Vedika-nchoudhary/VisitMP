@@ -1,0 +1,226 @@
+.hero-slide-hhero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-media-hhero {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  background-size: cover;
+  background-position: center;
+
+  animation: zoomHero 10s ease-in-out infinite alternate;
+}
+
+/* Smooth cinematic zoom */
+
+@keyframes zoomHero {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.08);
+  }
+}
+
+/* Overlay */
+
+.overlay-hhero {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+/* Different overlays for different moods */
+
+.eco-overlay-hhero {
+  background: linear-gradient(
+    to right,
+    rgba(0, 40, 20, 0.78),
+    rgba(0, 0, 0, 0.2)
+  );
+}
+
+.heritage-overlay-hhero {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.72),
+    rgba(0, 0, 0, 0.2)
+  );
+}
+
+.culture-overlay-hhero {
+  background: linear-gradient(
+    to right,
+    rgba(45, 20, 0, 0.72),
+    rgba(0, 0, 0, 0.2)
+  );
+}
+
+/* Content */
+
+.hero-content-hhero {
+  color: white;
+  max-width: 720px;
+
+  padding-left: 50px;
+
+  margin-top: -40px;
+}
+
+.hero-tag-hhero {
+  display: inline-block;
+
+  padding: 8px 18px;
+
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, 0.14);
+
+  backdrop-filter: blur(10px);
+
+  margin-bottom: 24px;
+
+  font-size: 0.9rem;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+.hero-content-hhero h1 {
+  font-size: 4.7rem;
+
+  font-weight: 800;
+
+  line-height: 1.1;
+
+  margin-bottom: 20px;
+
+  max-width: 650px;
+}
+
+.hero-content-hhero p {
+  font-size: 1.2rem;
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  max-width: 560px;
+}
+
+/* Buttons */
+
+.hero-buttons-hhero {
+  margin-top: 35px;
+}
+
+.hero-buttons-hhero .btn {
+  padding: 14px 28px;
+
+  border-radius: 50px;
+
+  font-weight: 600;
+
+  font-size: 1rem;
+}
+
+/* Carousel Controls */
+
+.hero-control-hhero {
+  width: 58px;
+  height: 58px;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 50%;
+
+  opacity: 1;
+}
+
+.carousel-control-prev.hero-control-hhero {
+  left: 24px;
+}
+
+.carousel-control-next.hero-control-hhero {
+  right: 24px;
+}
+
+.hero-control-hhero:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Indicators */
+
+.carousel-indicators {
+  bottom: 28px;
+  gap: 10px;
+}
+
+.carousel-indicators button {
+  width: 12px !important;
+  height: 12px !important;
+
+  border-radius: 50% !important;
+
+  border: none !important;
+
+  background: rgba(255, 255, 255, 0.4) !important;
+
+  backdrop-filter: blur(10px);
+
+  transition: all 0.35s ease;
+
+  opacity: 1 !important;
+
+  margin: 0 !important;
+}
+
+.carousel-indicators button.active {
+  width: 34px !important;
+
+  border-radius: 30px !important;
+
+  background: white !important;
+
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .hero-slide-hhero {
+    height: 85vh;
+  }
+
+  .hero-content-hhero {
+    padding: 20px;
+    margin-top: 0;
+  }
+
+  .hero-content-hhero h1 {
+    font-size: 2.7rem;
+  }
+
+  .hero-content-hhero p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .hero-control-hhero {
+    width: 44px;
+    height: 44px;
+  }
+}

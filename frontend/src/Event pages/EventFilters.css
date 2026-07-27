@@ -1,0 +1,23 @@
+.event-filters-section {
+  background-color: #f8f9fa;
+}
+
+.filters-box {
+  background-color: white;
+  border-radius: 16px;
+  margin-top: -80px;
+  position: relative;
+  z-index: 10;
+}
+
+.filters-box input,
+.filters-box select {
+  height: 55px;
+  border-radius: 10px;
+}
+
+.filters-box button {
+  height: 55px;
+  border-radius: 10px;
+  font-weight: 600;
+}

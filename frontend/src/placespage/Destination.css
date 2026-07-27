@@ -1,0 +1,192 @@
+/* Destination-desti.css */
+
+.destination-page-desti {
+  background: #F5F7F4;
+  min-height: 100vh;
+  padding-bottom: 5rem;
+}
+
+/* TOP SECTION */
+
+.destination-top-desti {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+
+  text-align: center;
+}
+
+/* .destination-subtitle-desti {
+  font-size: 0.72rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #7a7a7a;
+
+  margin-bottom: 0.5rem;
+} */
+
+.destination-title-desti {
+   font-size: 2.5rem;
+  font-weight: 700;
+  color: #1d4d3b;
+}
+
+/* SEARCH */
+
+.destination-search-wrapper-desti {
+  max-width: 850px;
+
+  margin-inline: auto;
+
+  margin-bottom: 3.5rem;
+}
+
+/* CATEGORY TABS */
+
+.destination-tabs-desti {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 4rem;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #111;
+}
+
+.destination-tab-desti {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  padding-bottom: 1.2rem;
+
+  transition: all 0.3s ease;
+}
+
+.destination-tab-desti i {
+  font-size: 2rem;
+
+  color: #1d4d3b;
+
+  margin-bottom: 1rem;
+
+  transition: 0.3s ease;
+}
+
+.destination-tab-desti p {
+  margin: 0;
+
+  font-size: 1rem;
+
+  font-weight: 500;
+
+  color: #0d0d0d;
+
+  transition: 0.3s ease;
+}
+
+/* UNDERLINE */
+
+.destination-line-desti {
+  position: absolute;
+
+  bottom: 0;
+
+  width: 0;
+
+  height: 4px;
+
+  border-radius: 999px;
+
+  background: #d97706;
+
+  transition: 0.3s ease;
+}
+
+.destination-tab-desti.active-desti .destination-line-desti {
+  width: 120px;
+}
+
+.destination-tab-desti.active-desti i {
+  color: #1d4d3b;
+}
+
+.destination-tab-desti.active-desti p {
+  color: #0d0d0d;
+}
+
+.destination-tab-desti:hover {
+  transform: translateY(-4px);
+}
+
+/* CARDS */
+
+.destination-cards-desti {
+  padding-top: 3rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .destination-tabs-desti {
+    gap: 2rem;
+  }
+
+  .destination-tab-desti p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .destination-tabs-desti {
+    gap: 2.5rem;
+  }
+
+  .destination-tab-desti p {
+    font-size: 1.1rem;
+  }
+
+  .destination-tab-desti i {
+    font-size: 1.7rem;
+  }
+
+  .destination-line-desti {
+    height: 3px;
+  }
+
+  .destination-tab-desti.active-desti .destination-line-desti {
+    width: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .destination-top-desti {
+    padding-top: 2rem;
+  }
+
+  .destination-tabs-desti {
+    gap: 2rem;
+  }
+
+  .destination-tab-desti p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,207 @@
+.experiences-section {
+  position: relative;
+  padding: 100px 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.9),
+      rgba(255,255,255,0.9)
+    ),
+    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* LEFT SIDE */
+
+.experience-details {
+  padding-right: 60px;
+}
+
+.experience-tag {
+  color: #2d6a4f;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.experience-details h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #1b4332;
+
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.experience-description {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #444;
+
+  max-width: 520px;
+}
+
+/* RIGHT SIDE */
+
+.experience-slider {
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* CARDS CONTAINER */
+
+.cards-wrapper {
+    width: 100%;
+  display: flex;
+  gap: 30px;
+
+  justify-content: center;
+  align-items: center;
+  
+  flex-wrap: nowrap;
+}
+
+/* CARD */
+
+.experience-card {
+  width: 280px !important; 
+  height: 500px !important;
+  border-radius: 28px;
+
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  overflow: hidden;
+  
+
+  transition: all 0.4s ease;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.experience-card-title {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+
+  line-height: 1.2;
+}
+
+/* ACTIVE CARD */
+
+.active-card {
+  transform: scale(1.03);
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+}
+
+/* OVERLAY */
+
+.card-overlay {
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.2)
+  );
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 25px;
+}
+
+.card-overlay h4 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  margin: 0;
+}
+
+/* BUTTONS BELOW */
+
+.slider-buttons {
+  margin-top: 35px;
+
+  display: flex;
+  gap: 20px;
+}
+
+.slider-buttons button {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: white;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+
+  transition: 0.3s ease;
+}
+
+.slider-buttons button:hover {
+  background: #2d6a4f;
+  color: white;
+}
+
+/* MOBILE */
+
+@media (max-width: 992px) {
+
+  .experience-details {
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .experience-details h2 {
+    font-size: 2.8rem;
+  }
+
+  .cards-wrapper {
+    gap: 20px;
+  }
+
+  .experience-card {
+    width: 230px;
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .cards-wrapper {
+    overflow-x: auto;
+
+    width: 100%;
+
+    justify-content: flex-start;
+
+    padding-bottom: 10px;
+  }
+
+  .experience-card {
+    min-width: 220px;
+    height: 380px;
+  }
+
+  .experience-details h2 {
+    font-size: 2.2rem;
+  }
+}

@@ -1,0 +1,190 @@
+/* PAGE */
+
+.events-page {
+  min-height: 100vh;
+
+  background: #f4f8f5;
+}
+
+/* HERO */
+
+.events-hero {
+  padding: 90px 20px 50px;
+
+  text-align: center;
+}
+
+.events-subtitle {
+  font-size: 0.75rem;
+
+  letter-spacing: 3px;
+
+  color: #8d8d8d;
+
+  margin-bottom: 15px;
+
+  font-weight: 600;
+}
+
+.events-title {
+  font-size: 4rem;
+
+  font-weight: 700;
+
+  color: #1c5b46;
+
+  margin-bottom: 20px;
+}
+
+.events-description {
+  max-width: 720px;
+
+  margin: auto;
+
+  color: #6b6b6b;
+
+  font-size: 1.08rem;
+
+  line-height: 1.8;
+}
+
+/* SECTION */
+
+.events-section {
+  padding-bottom: 80px;
+}
+
+/* CARD */
+
+.modern-event-card {
+  background: white;
+
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.35s ease;
+
+  height: 100%;
+}
+
+.modern-event-card:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGE */
+
+.event-image-wrapper {
+  height: 250px;
+
+  overflow: hidden;
+}
+
+.event-image-wrapper img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.modern-event-card:hover img {
+  transform: scale(1.08);
+}
+
+/* CONTENT */
+
+.event-content-catp {
+  padding: 28px;
+}
+
+.event-content-catp h3 {
+  font-size: 1.9rem;
+
+  font-weight: 700;
+
+  color: #1f1f1f;
+
+  margin-bottom: 15px;
+}
+
+.event-location {
+  color: #414141;
+
+  font-size: 0.98rem;
+
+  margin-bottom: 10px;
+}
+
+.event-date {
+  color: #1C5B46 !important;
+
+  font-size: 0.98rem;
+
+  font-weight: 600;
+
+  margin-bottom: 18px;
+
+  padding: 0;
+
+  background: transparent;
+
+  border: none;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* BUTTON */
+
+.explore-btn {
+  border: none;
+
+  background: #1c5b46;
+
+  color: white;
+
+  padding: 12px 28px;
+
+  border-radius: 40px;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: #144534;
+
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .events-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .events-title {
+    font-size: 2.3rem;
+  }
+
+  .events-description {
+    font-size: 1rem;
+  }
+
+  .event-image-wrapper {
+    height: 220px;
+  }
+
+  .event-content-catp h3 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,225 @@
+/* =========================
+   PAGE
+========================= */
+.itinerary-page-iteresult {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eef7f2 0%, #f7f7f7 100%);
+  padding-bottom: 80px;
+}
+
+/* =========================
+   HEADER
+========================= */
+.itinerary-subtitle-iteresult {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.itinerary-title-iteresult {
+  font-size: clamp(2.7rem, 5vw, 4.5rem);
+  font-weight: 700;
+  color: #1d4d3b;
+  margin-bottom: 1.5rem;
+}
+
+.itinerary-desc-iteresult {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+  line-height: 1.9;
+  font-size: 1.05rem;
+}
+
+/* =========================
+   WRAPPER
+========================= */
+.itinerary-wrapper-iteresult {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* =========================
+   DAY CARD
+========================= */
+.day-card-iteresult {
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 34px;
+  overflow: hidden;
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.08),
+    0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+/* =========================
+   CARD HEADER
+========================= */
+.day-header-iteresult {
+  padding: 2.2rem 2.5rem;
+  background: linear-gradient(135deg, #003948, #0b5d6b);
+  color: white;
+}
+
+.day-label-iteresult {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 0.7rem;
+}
+
+.day-header-iteresult h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* =========================
+   BODY
+========================= */
+.day-body-iteresult {
+  padding: 2.5rem;
+}
+
+.section-iteresult h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+/* =========================
+   ACTIVITIES
+========================= */
+.activity-list-iteresult {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.activity-item-iteresult {
+  padding: 1rem 1.2rem;
+  border-radius: 18px;
+  background: rgba(29, 77, 59, 0.06);
+  color: #333;
+  line-height: 1.7;
+}
+
+/* NEW ROW STYLE (USED IN JSX) */
+.activity-row-iteresult {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  border-radius: 18px;
+  background: rgba(29, 77, 59, 0.06);
+  margin-bottom: 1rem;
+}
+
+.activity-left-iteresult {
+  flex: 1;
+  font-weight: 500;
+  color: #333;
+}
+
+.activity-right-iteresult {
+  min-width: 140px;
+  text-align: right;
+  font-weight: 600;
+  color: #003948;
+}
+
+/* =========================
+   INFO GRID
+========================= */
+.info-grid-iteresult {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.info-box-iteresult {
+  padding: 1.5rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+}
+
+.info-box-iteresult h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #003948;
+}
+
+.info-box-iteresult p {
+  margin: 0;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.itinerary-btn-iteresult {
+  background: linear-gradient(135deg, #003948, #0b5d6b) !important;
+  border: none !important;
+  color: white !important;
+  transition: 0.3s ease;
+}
+
+.itinerary-btn-iteresult:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0, 57, 72, 0.22);
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+.itinerary-empty-iteresult h1 {
+  font-size: 3rem;
+  color: #1d4d3b;
+  font-weight: 700;
+}
+
+.itinerary-empty-iteresult p {
+  color: #777;
+  margin-top: 1rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+  .info-grid-iteresult {
+    grid-template-columns: 1fr;
+  }
+
+  .day-header-iteresult {
+    padding: 2rem;
+  }
+
+  .day-body-iteresult {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .itinerary-title-iteresult {
+    font-size: 2.4rem;
+  }
+
+  .day-header-iteresult h2 {
+    font-size: 1.5rem;
+  }
+
+  .day-body-iteresult {
+    padding: 1.5rem;
+  }
+}

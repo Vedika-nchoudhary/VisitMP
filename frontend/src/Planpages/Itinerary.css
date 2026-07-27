@@ -1,0 +1,97 @@
+.itegen-page-pp {
+  min-height: 100vh;
+  background: #f5f7f4;
+}
+
+/* Card */
+
+.itegen-card-pp {
+  background: #ffffff;
+
+  border-radius: 28px;
+
+  border: 1px solid rgba(0, 0, 0, 0.04);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* Heading */
+
+.itegen-subheading-pp {
+  color: #52b788;
+
+  font-size: 0.8rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.itegen-heading-pp {
+  color: #1b4332;
+}
+
+.itegen-text-pp {
+  color: #6c757d;
+}
+
+/* Labels */
+
+.itegen-label-pp {
+  color: #1b4332;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+
+/* Inputs */
+
+.itegen-input-pp {
+  border: 1px solid #dfe5dc;
+
+  padding: 14px;
+
+  box-shadow: none !important;
+}
+
+.itegen-input-pp:focus {
+  border-color: #52b788;
+}
+
+/* Icon Box */
+
+.itegen-iconbox-pp {
+  background: #edf6f0;
+
+  border: 1px solid #dfe5dc;
+
+  color: #1f4d3a;
+}
+
+/* Button */
+
+.itegen-btn-pp {
+  background: #1f4d3a;
+
+  color: white;
+
+  padding: 14px;
+
+  border-radius: 14px;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.itegen-btn-pp:hover {
+  background: #2d6a4f;
+
+  color: white;
+
+  transform: translateY(-2px);
+}

@@ -1,0 +1,319 @@
+/* =========================
+   PAGE
+========================= */
+
+.distcity-page-distcity {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(180deg,
+            #eef7f2 0%,
+            #f8f8f8 100%);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.distcity-hero-distcity {
+    position: relative;
+
+    width: 100%;
+    height: 95vh;
+
+    overflow: hidden;
+}
+
+.distcity-hero-image-distcity {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.distcity-hero-overlay-distcity {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(to top,
+            rgba(0, 0, 0, 0.68),
+            rgba(0, 0, 0, 0.2));
+}
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.distcity-hero-content-distcity {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    text-align: center;
+
+    z-index: 2;
+
+    width: 90%;
+}
+
+.distcity-subtitle-distcity {
+    color:
+        rgba(255, 255, 255, 0.85);
+
+    letter-spacing: 3px;
+
+    font-size: 0.8rem;
+
+    font-weight: 600;
+
+    margin-bottom: 1rem;
+}
+
+.distcity-hero-content-distcity h1 {
+    font-size:
+        clamp(3rem, 8vw, 6rem);
+
+    font-weight: 700;
+
+    color: white;
+
+    margin-bottom: 1rem;
+
+    text-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.distcity-type-distcity {
+    color:
+        rgba(255, 255, 255, 0.8);
+
+    letter-spacing: 2px;
+
+    font-size: 0.95rem;
+
+    text-transform: uppercase;
+
+    margin: 0;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.distcity-description-wrapper-distcity {
+    max-width: 950px;
+
+    margin:
+        0 auto 5rem;
+
+    text-align: center;
+}
+
+.distcity-description-distcity {
+    color: #666;
+
+    font-size: 1.35rem;
+
+    line-height: 2;
+}
+
+/* =========================
+   SECTION HEADERS
+========================= */
+
+.distcity-section-header-distcity {
+    text-align: center;
+
+    margin-bottom: 3rem;
+}
+
+.distcity-section-header-distcity p {
+    font-size: 0.75rem;
+
+    letter-spacing: 2px;
+
+    font-weight: 600;
+
+    color: #777;
+
+    margin-bottom: 1rem;
+}
+
+.distcity-section-header-distcity h2 {
+    font-size:
+        clamp(2rem, 4vw, 3.2rem);
+
+    font-weight: 700;
+
+    color: #1d4d3b;
+}
+
+/* =========================
+   TRANSPORT SECTION
+========================= */
+
+.distcity-section-distcity {
+    margin-bottom: 6rem;
+}
+
+.transport-card-distcity {
+    height: 100%;
+
+    padding: 2rem;
+
+    border-radius: 30px;
+
+    background:
+        rgba(255, 255, 255, 0.82);
+
+    backdrop-filter: blur(18px);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.7);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.08),
+        0 8px 18px rgba(0, 0, 0, 0.04);
+
+    transition: 0.35s ease;
+}
+
+.transport-card-distcity:hover {
+    transform:
+        translateY(-8px);
+}
+
+.transport-icon-distcity {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 22px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+
+    margin-bottom: 1.5rem;
+
+    background:
+        rgba(0, 57, 72, 0.08);
+}
+
+.transport-card-distcity h4 {
+    font-size: 1.45rem;
+
+    font-weight: 700;
+
+    margin-bottom: 1rem;
+
+    color: #111;
+}
+
+.transport-card-distcity p {
+    color: #666;
+
+    line-height: 1.9;
+
+    margin: 0;
+}
+
+/* =========================
+   MAP
+========================= */
+
+.map-section-distcity {
+    margin-bottom: 3rem;
+}
+
+.map-card-distcity {
+    overflow: hidden;
+
+    border-radius: 34px;
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+.map-card-distcity iframe {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}
+
+/* =========================
+   NOT FOUND
+========================= */
+
+.distcity-notfound-distcity {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(180deg,
+            #eef7f2 0%,
+            #f8f8f8 100%);
+}
+
+.distcity-notfound-distcity h1 {
+    font-size: 4rem;
+
+    color: #1d4d3b;
+
+    margin-bottom: 1rem;
+}
+
+.distcity-notfound-distcity p {
+    color: #666;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+    .distcity-hero-distcity {
+        height: 75vh;
+    }
+
+    .transport-card-distcity {
+        padding: 1.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .distcity-hero-content-distcity h1 {
+        font-size: 3rem;
+    }
+
+    .distcity-description-distcity {
+        font-size: 1rem;
+    }
+
+    .transport-card-distcity {
+        border-radius: 24px;
+    }
+
+    .map-card-distcity {
+        border-radius: 24px;
+    }
+}
