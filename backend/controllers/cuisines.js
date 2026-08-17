@@ -1,4 +1,4 @@
-const Cuisine = require("../models/Cuisine");
+const Cuisine = require("../models/cuisine");
 
 module.exports.allCusines = async (req, res) => {
     try {
