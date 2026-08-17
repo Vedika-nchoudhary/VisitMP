@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Destination from "./placespage/Destination";
 import NavBar from "./components/NavBar";
 import Placesbytype from "./placespage/Placesbytype";
-import PlaceDetails from "./placespage/PlaceDetails";
+import PlaceDetails from "./placespage/Placedetails";
 import HomePage from "./home page/HomePage";
 import EventPage from "./Event pages/EventPage";
 import CategoryEventsPage from "./Event pages/CategoryEventsPage";
