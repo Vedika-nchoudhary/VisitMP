@@ -4,7 +4,7 @@ import {
   FaPhoneVolume,
 } from "react-icons/fa6";
 
-import "./EmergencyContact.css";
+import "./emergencycontact.css";
 
 function EmergencyContact() {
 
