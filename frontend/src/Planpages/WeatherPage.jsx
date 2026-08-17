@@ -4,7 +4,7 @@ import WeatherForecast from "./WeatherForecast";
 import WeeklyForecast from "./WeeklyForecast";
 import TravelRecommendations from "./TravelRecommendations";
 
-import { getWeather } from "../api/weatherApi";
+import { getWeather } from "../api/WeatherApi";
 
 function WeatherPage() {
   const [weatherData, setWeatherData] = useState(null);

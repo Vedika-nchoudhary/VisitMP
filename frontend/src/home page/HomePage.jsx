@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getHomeData } from "../api/homeApi";
+import { getHomeData } from "../api/homeapi";
 
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
