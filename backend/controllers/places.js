@@ -1,4 +1,4 @@
-const Place = require("../models/Place");
+const Place = require("../models/place");
 
 module.exports.allPlaces = async (req, res) => {
   // const places = await Place.find();
